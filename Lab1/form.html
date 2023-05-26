@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+  <div class="container">
+    <form class="my-4" method="get" action="register.php">
+      <div class="form-group row my-4">
+        <label for="inputEmail3" class="col-sm-2 col-form-label">First Name</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="inputEmail3" name="firstName">
+        </div>
+      </div>
+      <div class="form-group row my-4">
+        <label for="inputEmail3" class="col-sm-2 col-form-label">Last Name</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="inputEmail3" name="lastname">
+        </div>
+      </div>
+
+
+      <div class="row">
+        <legend class="col-form-label col-sm-2 pt-0">Gender</legend>
+        <div class="col-sm-10">
+         
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="Gender" id="gridRadios2" value="Male">
+            <label class="form-check-label" for="gridRadios2">
+              male
+            </label>
+          </div>
+          <div class="form-check disabled">
+            <input class="form-check-input" type="radio" name="Gender" id="gridRadios3" value="female" >
+            <label class="form-check-label" for="gridRadios3">
+              female
+            </label>
+          </div>
+        </div>
+      </div>
+
+
+    
+
+      <div class="form-group row my-4">
+        <label for="inputTextarea1" class="col-sm-2 col-form-label" >Address</label>
+        <div class="col-sm-10">
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="address"></textarea>
+        </div>
+      </div>
+
+      <div class="form-group row my-4">
+        <label for="inputEmail3" class="col-sm-2 col-form-label">Dapartment</label>
+        <div class="col-sm-10">
+          <input type="email" class="form-control" id="inputEmail3" placeholder="Open Source" value="open source" disabled>
+        </div>
+      </div>
+
+      <div class="form-group row my-4">
+        <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+        <div class="col-sm-10">
+          <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+        </div>
+      </div>
+
+      <div class="form-group row my-4">
+        <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+        <div class="col-sm-10">
+          <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+        </div>
+      </div>
+      <fieldset class="form-group">
+        <div class="row">
+          <legend class="col-form-label col-sm-2 pt-0">Skills</legend>
+          <div class="col-sm-10">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" name="Skills[]" id="gridRadios1" value="PHP" >
+              <label class="form-check-label" for="gridRadios1">
+                PHP
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" name="Skills[]" id="gridRadios2" value="JavaScript">
+              <label class="form-check-label" for="gridRadios2">
+                JavaScript
+              </label>
+            </div>
+            <div class="form-check disabled">
+              <input class="form-check-input" type="checkbox" name="Skills[]" id="gridRadios3" value="Python" >
+              <label class="form-check-label" for="gridRadios3">
+                Python
+              </label>
+            </div>
+          </div>
+        </div>
+
+
+      </fieldset>
+      <div class="form-group row">
+        <div class="col-sm-10">
+          <button type="submit" class="btn btn-primary">Summit</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>
